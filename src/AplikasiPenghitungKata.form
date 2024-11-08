@@ -48,6 +48,7 @@
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
             <TitledBorder justification="2" position="1" title="Aplikasi Penghitungan Kata">
               <Font PropertyName="font" name="Roboto" size="24" style="1"/>
+              <Color PropertyName="color" blue="ff" green="33" red="33" type="rgb"/>
             </TitledBorder>
           </Border>
         </Property>
