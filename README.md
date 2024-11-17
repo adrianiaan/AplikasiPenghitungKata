@@ -109,11 +109,16 @@ Aplikasi ini digunakan untuk menghitung jumlah **kata**, **karakter**, **kalimat
 ## Komponen GUI
 
 Aplikasi ini menggunakan komponen berikut:
-- **`JTextArea`**: Untuk memasukkan teks yang akan dianalisis.  
-- **`JButton`**: Tombol untuk menghitung, mencari kata, dan menyimpan hasil analisis.  
-- **`JLabel`**: Menampilkan hasil analisis (jumlah kata, karakter, kalimat, dan paragraf).  
-- **`JFileChooser`**: Untuk memilih lokasi penyimpanan file.  
-
+- **`JTextArea`**: Area input teks untuk memasukkan teks yang akan dianalisis.  
+- **`JLabel`**: Label untuk menampilkan hasil analisis, seperti jumlah kata, karakter, kalimat, dan paragraf.  
+- **`JTextField`**: Kolom input untuk mencari kata dalam teks.  
+- **`JButton`**:  
+   - **Hitung Kata**: Tombol untuk menghitung jumlah kata, karakter, kalimat, dan paragraf.  
+   - **Cari**: Tombol untuk mencari kata tertentu dalam teks.  
+   - **Simpan**: Tombol untuk menyimpan hasil analisis ke file `.txt`.  
+- **`JFileChooser`**: Komponen untuk memilih lokasi penyimpanan file hasil analisis.  
+- **`JScrollPane`**: Menampilkan teks pada area input dengan kemampuan scroll jika teks melebihi batas layar.  
+- **`JPanel`**: Panel utama yang mengelompokkan elemen GUI.  
 
 ---
 
@@ -126,24 +131,6 @@ Aplikasi ini menggunakan komponen berikut:
    - **Hitung Kata**: Menghitung jumlah kata, karakter, kalimat, dan paragraf.  
    - **Cari**: Mencari kata tertentu dalam teks.  
    - **Simpan**: Menyimpan hasil analisis ke file `.txt`.
-
-## Tampilan Pada saat Aplikasi dijalankan
-![image](https://github.com/user-attachments/assets/3ecaa746-07a0-4963-a63a-f3866e33811b)
-
-
-## Contoh Hasil Penyimpanan 
-Berikut adalah contoh hasil file `.txt` yang disimpan oleh aplikasi:  
-```
-Isi Teks:
-Contoh Jumlah Karekater, Jumlah Kata, dan
-Jumlah Kalimat.
-
-Hasil Perhitungan:
-Jumlah Kata: 8
-Jumlah Karakter: 57
-Jumlah Kalimat: 1
-Jumlah Paragraf: 2
-```
 
 ---
 
@@ -159,6 +146,7 @@ Jumlah Paragraf: 2
 | **TOTAL** |               | **100%**   |
 
 ---
+
 ## Pembuat
 
 - **Nama**: Adrian Akhmad Firdaus  
@@ -168,4 +156,4 @@ Jumlah Paragraf: 2
 - **Fakultas**: Fakultas Teknologi Informasi (FTI)  
 - **Universitas**: Universitas Islam Kalimantan Muhammad Arsyad Al Banjari Banjarmasin  
 
---- 
+---
