@@ -1,0 +1,9 @@
+Isi Teks:
+Contoh Jumlah Karekater, Jumlah Kata, dan
+Jumlah Kalimat.
+
+Hasil Perhitungan:
+Jumlah Kata: 8
+Jumlah Karakter: 57
+Jumlah Kalimat: 1
+Jumlah Paragraf: 2

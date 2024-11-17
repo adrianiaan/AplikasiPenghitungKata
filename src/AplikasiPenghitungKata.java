@@ -279,6 +279,12 @@ public class AplikasiPenghitungKata extends javax.swing.JFrame {
 
         if (userSelection == JFileChooser.APPROVE_OPTION) {
             File fileToSave = fileChooser.getSelectedFile();
+
+            // Tambahkan ekstensi .txt jika pengguna tidak menambahkan ekstensi
+            if (!fileToSave.getName().endsWith(".txt")) {
+                fileToSave = new File(fileToSave.getAbsolutePath() + ".txt");
+            }
+
             try (PrintWriter writer = new PrintWriter(fileToSave)) {
                 // Menulis isi teks
                 writer.println("Isi Teks:");
@@ -291,10 +297,12 @@ public class AplikasiPenghitungKata extends javax.swing.JFrame {
                 writer.println(labelKalimat.getText());
                 writer.println(labelParagraf.getText());
 
-                JOptionPane.showMessageDialog(this, "File berhasil disimpan.", "Simpan Berhasil", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(this, "File berhasil disimpan di " + fileToSave.getAbsolutePath(), "Simpan Berhasil", JOptionPane.INFORMATION_MESSAGE);
             } catch (IOException e) {
                 JOptionPane.showMessageDialog(this, "Terjadi kesalahan saat menyimpan file.", "Error", JOptionPane.ERROR_MESSAGE);
             }
+        } else {
+            JOptionPane.showMessageDialog(this, "Penyimpanan file dibatalkan.", "Informasi", JOptionPane.INFORMATION_MESSAGE);
         }
     }//GEN-LAST:event_btnSimpanActionPerformed
 
